@@ -31,6 +31,8 @@
 		4059D17A2C9C1ABA00DB7FB5 /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4059D1792C9C1ABA00DB7FB5 /* RepositoryViewModel.swift */; };
 		4059D17D2C9C215300DB7FB5 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4059D17C2C9C215300DB7FB5 /* RepositoryTableViewCell.swift */; };
 		409B12DE2C9D9CC500B2AED2 /* KanbanContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409B12DD2C9D9CC500B2AED2 /* KanbanContainerViewController.swift */; };
+		40BEA6FD2C9DF03700AC266F /* IssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BEA6FC2C9DF03700AC266F /* IssueTableViewCell.swift */; };
+		40BEA7012C9DF21200AC266F /* IssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BEA7002C9DF21200AC266F /* IssuesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		4059D1792C9C1ABA00DB7FB5 /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 		4059D17C2C9C215300DB7FB5 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		409B12DD2C9D9CC500B2AED2 /* KanbanContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanContainerViewController.swift; sourceTree = "<group>"; };
+		40BEA6FC2C9DF03700AC266F /* IssueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTableViewCell.swift; sourceTree = "<group>"; };
+		40BEA7002C9DF21200AC266F /* IssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				400CA7D52C9D82BC00534BD7 /* NextViewController.swift */,
 				400CA7D72C9D82D000534BD7 /* DoingViewController.swift */,
 				400CA7D92C9D82E500534BD7 /* DoneViewController.swift */,
+				40BEA7002C9DF21200AC266F /* IssuesViewController.swift */,
 			);
 			path = KanbanViews;
 			sourceTree = "<group>";
@@ -182,9 +187,9 @@
 		4059D16D2C9C15AD00DB7FB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				40BEA6FB2C9DF02700AC266F /* Cells */,
 				400CA7D22C9D827D00534BD7 /* KanbanViews */,
 				4059D1402C9C147700DB7FB5 /* ExploreViewController.swift */,
-				4059D17C2C9C215300DB7FB5 /* RepositoryTableViewCell.swift */,
 				4059D1422C9C147700DB7FB5 /* Main.storyboard */,
 				400CA7CC2C9D775100534BD7 /* LocalViewController.swift */,
 				400CA7D02C9D7F1E00534BD7 /* KanbanPageViewController.swift */,
@@ -202,6 +207,15 @@
 				400CA7CE2C9D7AE000534BD7 /* LocalRepositoryViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		40BEA6FB2C9DF02700AC266F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4059D17C2C9C215300DB7FB5 /* RepositoryTableViewCell.swift */,
+				40BEA6FC2C9DF03700AC266F /* IssueTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BEA7012C9DF21200AC266F /* IssuesViewController.swift in Sources */,
 				4059D1412C9C147700DB7FB5 /* ExploreViewController.swift in Sources */,
 				4059D1702C9C1A1700DB7FB5 /* GithubAPIManager.swift in Sources */,
 				4059D1722C9C1A3F00DB7FB5 /* Repository.swift in Sources */,
@@ -348,6 +363,7 @@
 				400CA7CF2C9D7AE000534BD7 /* LocalRepositoryViewModel.swift in Sources */,
 				4059D13F2C9C147700DB7FB5 /* SceneDelegate.swift in Sources */,
 				400CA7D62C9D82BC00534BD7 /* NextViewController.swift in Sources */,
+				40BEA6FD2C9DF03700AC266F /* IssueTableViewCell.swift in Sources */,
 				400CA7D42C9D829100534BD7 /* BacklogViewController.swift in Sources */,
 				400CA7D12C9D7F1E00534BD7 /* KanbanPageViewController.swift in Sources */,
 				4059D1742C9C1A5A00DB7FB5 /* Issue.swift in Sources */,

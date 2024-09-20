@@ -4,20 +4,19 @@ import UIKit
 /// This class represents the Backlog stage (1/4) in the Kanban board.
 /// It will handle displaying the list of backlog issues in future phases.
 
-class BacklogViewController: UIViewController {
+class BacklogViewController: IssuesViewController {
 
     /// This method is called after the controller's view is loaded into memory.
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set background color for visual confirmation
-        view.backgroundColor = .white
+        // Populate the list of backlog issues
+        issues = [
+            Issue(title: "Backlog Issue 1", info: "Info about Backlog Issue 1"),
+            Issue(title: "Backlog Issue 2", info: "Info about Backlog Issue 2")
+        ]
         
-        // Add a label for confirmation
-        let label = UILabel()
-        label.text = "Backlog View"
-        label.textAlignment = .center
-        label.frame = view.bounds
-        view.addSubview(label)
+        // Reload the table view with backlog data
+        tableView.reloadData()
     }
 }

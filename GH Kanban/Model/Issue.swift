@@ -6,7 +6,5 @@ import Foundation
 
 struct Issue {
     let title: String
-    let issueNumber: Int
-    let dateCreated: Date
-    let comments: Int
+    let info: String
 }
