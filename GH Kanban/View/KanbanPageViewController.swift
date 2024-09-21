@@ -7,16 +7,24 @@ class KanbanPageViewController: UIPageViewController, UIPageViewControllerDataSo
     /// The repository associated with the Kanban board, passed from the previous view controller.
     var repository: Repository?
     
-    /// Array that holds the different view controllers for each stage of the Kanban board
+    /// Array that holds the different view controllers for each stage of the Kanban board.
     lazy var kanbanStages: [UIViewController] = {
-        return [
-            BacklogViewController(),  // Backlog (1/4)
-            NextViewController(),     // Next (2/4)
-            DoingViewController(),    // Doing (3/4)
-            DoneViewController()      // Done (4/4)
-        ]
+        // Create instances of each view controller and assign the repository
+        let backlogVC = BacklogViewController()
+        backlogVC.repository = repository
+        
+        let nextVC = NextViewController()
+        nextVC.repository = repository
+        
+        let doingVC = DoingViewController()
+        doingVC.repository = repository
+        
+        let doneVC = DoneViewController()
+        doneVC.repository = repository
+        
+        return [backlogVC, nextVC, doingVC, doneVC]
     }()
-    
+
     /// Custom navigation view that holds the navigation buttons and label
     let navView: UIView = {
         let view = UIView()
@@ -94,6 +102,7 @@ class KanbanPageViewController: UIPageViewController, UIPageViewControllerDataSo
             nextButton.addTarget(self, action: #selector(goToNextPage), for: .touchUpInside)
         }
     }
+    
     
     // MARK: - Navigation Methods
 

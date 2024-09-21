@@ -26,7 +26,12 @@ class ExploreViewController: UIViewController {
     /// Once the repositories are fetched, the table view is reloaded to display the data.
     private func fetchRepositories() {
         viewModel.fetchRepositories(forUsername: "inqbarna") { [weak self] in
-            self?.tableView.reloadData()
+            DispatchQueue.main.async {
+                // Reload the table view with the fetched data
+                self?.tableView.reloadData()
+                // Print the repositories to check if data is being fetched correctly
+                print(self?.viewModel.repositories ?? "No repositories fetched")
+            }
         }
     }
 }
@@ -54,9 +59,28 @@ extension ExploreViewController: UITableViewDataSource {
         
         // Assign values to the outlets of the cell
         cell.repoNameLabel.text = repo.name
-        cell.repoAuthorLabel.text = repo.owner
+        cell.repoAuthorLabel.text = repo.owner.login  // Using the 'login' field from owner
         cell.addButtonImageView.setImage(UIImage(systemName: "plus"), for: .normal)
         
+        // Assign a target to the "plus" button to save the repository when pressed
+        cell.addButtonImageView.addTarget(self, action: #selector(saveRepo(_:)), for: .touchUpInside)
+        cell.addButtonImageView.tag = indexPath.row  // Assign the row index to the button's tag for reference
+
         return cell
+    }
+
+    /// Save the repository to local storage when the "plus" button is pressed.
+    /// - Parameter sender: The button that was pressed (used to identify the selected repository).
+    @objc private func saveRepo(_ sender: UIButton) {
+        let repo = viewModel.repositories[sender.tag]
+        
+        // Save the repository locally using PersistenceManager
+        PersistenceManager().saveRepository(repo)
+        
+        // Send a notification that a repository has been saved
+        NotificationCenter.default.post(name: NSNotification.Name("repositorySaved"), object: nil)
+
+        // Print confirmation for debugging purposes
+        print("\(repo.name) saved to local.")
     }
 }

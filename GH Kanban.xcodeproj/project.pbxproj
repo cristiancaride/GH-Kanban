@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		400CA7CD2C9D775100534BD7 /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400CA7CC2C9D775100534BD7 /* LocalViewController.swift */; };
-		400CA7CF2C9D7AE000534BD7 /* LocalRepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400CA7CE2C9D7AE000534BD7 /* LocalRepositoryViewModel.swift */; };
 		400CA7D12C9D7F1E00534BD7 /* KanbanPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400CA7D02C9D7F1E00534BD7 /* KanbanPageViewController.swift */; };
 		400CA7D42C9D829100534BD7 /* BacklogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400CA7D32C9D829100534BD7 /* BacklogViewController.swift */; };
 		400CA7D62C9D82BC00534BD7 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400CA7D52C9D82BC00534BD7 /* NextViewController.swift */; };
@@ -26,13 +25,13 @@
 		4059D1702C9C1A1700DB7FB5 /* GithubAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4059D16F2C9C1A1700DB7FB5 /* GithubAPIManager.swift */; };
 		4059D1722C9C1A3F00DB7FB5 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4059D1712C9C1A3F00DB7FB5 /* Repository.swift */; };
 		4059D1742C9C1A5A00DB7FB5 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4059D1732C9C1A5A00DB7FB5 /* Issue.swift */; };
-		4059D1762C9C1A6D00DB7FB5 /* KanbanBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4059D1752C9C1A6D00DB7FB5 /* KanbanBoard.swift */; };
 		4059D1782C9C1A9800DB7FB5 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4059D1772C9C1A9800DB7FB5 /* PersistanceManager.swift */; };
 		4059D17A2C9C1ABA00DB7FB5 /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4059D1792C9C1ABA00DB7FB5 /* RepositoryViewModel.swift */; };
 		4059D17D2C9C215300DB7FB5 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4059D17C2C9C215300DB7FB5 /* RepositoryTableViewCell.swift */; };
 		409B12DE2C9D9CC500B2AED2 /* KanbanContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409B12DD2C9D9CC500B2AED2 /* KanbanContainerViewController.swift */; };
 		40BEA6FD2C9DF03700AC266F /* IssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BEA6FC2C9DF03700AC266F /* IssueTableViewCell.swift */; };
 		40BEA7012C9DF21200AC266F /* IssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BEA7002C9DF21200AC266F /* IssuesViewController.swift */; };
+		40CBB0E92C9EABAF008F6655 /* LocalRepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CBB0E82C9EABAF008F6655 /* LocalRepositoryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 
 /* Begin PBXFileReference section */
 		400CA7CC2C9D775100534BD7 /* LocalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
-		400CA7CE2C9D7AE000534BD7 /* LocalRepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRepositoryViewModel.swift; sourceTree = "<group>"; };
 		400CA7D02C9D7F1E00534BD7 /* KanbanPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanPageViewController.swift; sourceTree = "<group>"; };
 		400CA7D32C9D829100534BD7 /* BacklogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogViewController.swift; sourceTree = "<group>"; };
 		400CA7D52C9D82BC00534BD7 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
@@ -76,13 +74,13 @@
 		4059D16F2C9C1A1700DB7FB5 /* GithubAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIManager.swift; sourceTree = "<group>"; };
 		4059D1712C9C1A3F00DB7FB5 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		4059D1732C9C1A5A00DB7FB5 /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
-		4059D1752C9C1A6D00DB7FB5 /* KanbanBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanBoard.swift; sourceTree = "<group>"; };
 		4059D1772C9C1A9800DB7FB5 /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
 		4059D1792C9C1ABA00DB7FB5 /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 		4059D17C2C9C215300DB7FB5 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		409B12DD2C9D9CC500B2AED2 /* KanbanContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanContainerViewController.swift; sourceTree = "<group>"; };
 		40BEA6FC2C9DF03700AC266F /* IssueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTableViewCell.swift; sourceTree = "<group>"; };
 		40BEA7002C9DF21200AC266F /* IssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesViewController.swift; sourceTree = "<group>"; };
+		40CBB0E82C9EABAF008F6655 /* LocalRepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRepositoryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +177,6 @@
 			children = (
 				4059D1712C9C1A3F00DB7FB5 /* Repository.swift */,
 				4059D1732C9C1A5A00DB7FB5 /* Issue.swift */,
-				4059D1752C9C1A6D00DB7FB5 /* KanbanBoard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,7 +201,7 @@
 				4059D16F2C9C1A1700DB7FB5 /* GithubAPIManager.swift */,
 				4059D1772C9C1A9800DB7FB5 /* PersistanceManager.swift */,
 				4059D1792C9C1ABA00DB7FB5 /* RepositoryViewModel.swift */,
-				400CA7CE2C9D7AE000534BD7 /* LocalRepositoryViewModel.swift */,
+				40CBB0E82C9EABAF008F6655 /* LocalRepositoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -353,14 +350,13 @@
 				4059D1412C9C147700DB7FB5 /* ExploreViewController.swift in Sources */,
 				4059D1702C9C1A1700DB7FB5 /* GithubAPIManager.swift in Sources */,
 				4059D1722C9C1A3F00DB7FB5 /* Repository.swift in Sources */,
+				40CBB0E92C9EABAF008F6655 /* LocalRepositoryViewModel.swift in Sources */,
 				4059D17D2C9C215300DB7FB5 /* RepositoryTableViewCell.swift in Sources */,
 				400CA7D82C9D82D000534BD7 /* DoingViewController.swift in Sources */,
 				4059D13D2C9C147700DB7FB5 /* AppDelegate.swift in Sources */,
-				4059D1762C9C1A6D00DB7FB5 /* KanbanBoard.swift in Sources */,
 				409B12DE2C9D9CC500B2AED2 /* KanbanContainerViewController.swift in Sources */,
 				400CA7CD2C9D775100534BD7 /* LocalViewController.swift in Sources */,
 				4059D17A2C9C1ABA00DB7FB5 /* RepositoryViewModel.swift in Sources */,
-				400CA7CF2C9D7AE000534BD7 /* LocalRepositoryViewModel.swift in Sources */,
 				4059D13F2C9C147700DB7FB5 /* SceneDelegate.swift in Sources */,
 				400CA7D62C9D82BC00534BD7 /* NextViewController.swift in Sources */,
 				40BEA6FD2C9DF03700AC266F /* IssueTableViewCell.swift in Sources */,
